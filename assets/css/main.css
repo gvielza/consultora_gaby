@@ -18,7 +18,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: rgba(255, 255, 255, 0.55);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #16770e; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -2832,4 +2832,115 @@ section,
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
   transform: translateY(-5px); 
 
+}
+/* Ajustes generales del header */
+#header {
+  padding: 10px 0;
+  transition: all 0.5s;
+  background: white;
+}
+
+#header.header-scrolled {
+  padding: 5px 0;
+}
+
+/* Contenedor principal del header */
+.container-fluid.container-xl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos para el contenedor del logo */
+#logo-img {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  max-height: 100%;
+}
+/*Estilos para la imagen del logo */
+#logo-img img {
+  max-height: 80px;
+  width: auto;
+  display: block;
+}
+
+/* Estilos del menu */
+.navmenu {
+  margin-right: 15px;
+}
+
+.navmenu ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navmenu li {
+  padding: 0 10px;
+}
+
+.navmenu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/*Media query para mobile */
+@media (max-width: 1200px) {
+  .navmenu ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 20px 0;
+      z-index: 1000;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      transition: display 0.3s ease; /* Agregamos una transición suave */
+  }
+
+  .navmenu li {
+      padding: 10px 20px;
+      text-align: left;
+  }
+
+   .navmenu li a {
+     display: block;
+     width: 100%;
+    }
+
+  /* Mostrar el menú cuando se active */
+  .navmenu.active ul {
+    display: flex;
+  }
+
+  /* Agregamos un botón de hamburguesa */
+  .mobile-nav-toggle {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      margin-right: 15px;
+      color: #333;
+      z-index: 1001; /* Asegura que el botón este arriba */
+  }
+
+  .navmenu .bi-chevron-down{
+      position: relative;
+      left: 10px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+#logo-img img {
+   max-height: 100px;
+ }
+
+ .mobile-nav-toggle {
+      display: none;
+ }
 }
