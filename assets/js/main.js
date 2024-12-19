@@ -1,3 +1,10 @@
+/**
+* Template Name: UpConstruction
+* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
 (function() {
   "use strict";
@@ -160,80 +167,3 @@
   new PureCounter();
 
 })();
-
-document.addEventListener("DOMContentLoaded", () => {
-  const loadContent = (selector, file, callback) => {
-    const container = document.getElementById(selector);
-    fetch(file)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`No se pudo cargar ${file}`);
-        }
-        return response.text();
-      })
-      .then((data) => {
-        container.innerHTML = data;
-        if (callback) callback(); // Ejecuta la función pasada como callback
-      })
-      .catch((error) => {
-        console.error(`Error al cargar ${file}:`, error);
-      });
-  };
-
-  // Cargar el header
-  loadContent("header", "header.html", () => {
-    initHeaderScripts(); // Inicializa el script del header
-    initScrollEffects(); // Llama a la función para manejar el scroll
-  });
-
-
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".navmenu a");
-
-
-      navLinks.forEach(link => {
-         if (link.getAttribute("href") === currentPage || (currentPage === "" && link.getAttribute("href") === "index.html")) {
-             link.classList.add("active");
-        } else {
-           link.classList.remove("active");
-        }
-      });
-});
-
-
-// Función para manejar los efectos de scroll
-const initScrollEffects = () => {
-  window.addEventListener("scroll", () => {
-    const header = document.querySelector("#header");
-    if (window.scrollY > 50) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
-};
-
-//Funcion para inicializar el script del header
-const initHeaderScripts = () => {
-    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-    const navMenu = document.getElementById('navmenu');
-
-
-        if (mobileNavToggle && navMenu) {
-        mobileNavToggle.addEventListener('click', function(event) {
-            event.stopPropagation();
-            console.log("click");
-            navMenu.classList.toggle('active');
-            });
-
-            document.addEventListener('click', function(event) {
-                const isClickInsideMenu = navMenu.contains(event.target)
-                const isClickOnToggle = mobileNavToggle.contains(event.target);
-                console.log("skd");
-
-                if(!isClickInsideMenu && !isClickOnToggle && navMenu.classList.contains('active')){
-                    navMenu.classList.remove('active');
-                }
-            })
-        }
-    }

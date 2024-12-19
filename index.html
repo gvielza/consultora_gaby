@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,8 +34,37 @@
 
 <body class="index-page">
   <div>
-    <header id="header">
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center" id="logo-img">
+          <img src="assets/img/Logo-removebg.png" alt="Logo Vacuolar">
+        </a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown"><a href="services.html"><span>Servicios Ambientales</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Estudios de Impacto Ambiental (EIA)</a></li>
+                <li><a href="#">Planes de Gestión Ambiental (PMA)</a></li>
+                <li><a href="#">Monitoreos Ambientales</a></li>
+                <li><a href="#">Inspección Ambiental de Obras</a></li>
+                <li><a href="#">Estudios de Suelo: contaminación y remediación</a></li>
+                <li><a href="#">Cálculo de la Huella de Carbono</a></li>
+                <li><a href="#">Estudios GIS</a></li>
+                <li><a href="#">Otros</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-toggle">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
     </header>
   </div>
 
@@ -50,7 +81,9 @@
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-6 text-center">
               <h2>Bienvenidos a Vacuolar Ingeniería</h2>
-              <p>Somos un estudio profesional especializado en brindar soluciones ambientales a pymes y empresas de todas las escalas. Nos enfocamos en generar resultados que aporten valor agregado, convirtiendo los desafíos ambientales en oportunidades de crecimiento y mejora continua.</p>
+              <p>Somos un estudio profesional especializado en brindar soluciones ambientales a pymes y empresas de
+                todas las escalas. Nos enfocamos en generar resultados que aporten valor agregado, convirtiendo los
+                desafíos ambientales en oportunidades de crecimiento y mejora continua.</p>
               <a href="#get-started" class="btn-get-started">Conoce más</a>
             </div>
           </div>
@@ -60,7 +93,7 @@
       <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item">
-          <img src="assets/img/carrusel/update/descargar.png" alt="">
+          <img src="assets/img/carrusel/update/pexels-hasan-zahra-1120724-2118560.jpg" alt="">
         </div>
 
         <div class="carousel-item active">
@@ -68,7 +101,7 @@
         </div>
 
         <div class="carousel-item">
-          <img src="assets/img/carrusel/update/pexels-hasan-zahra-1120724-2118560.jpg" alt="">
+          <img src="assets/img/carrusel/update/soil-8080788_1280.jpg" alt="">
         </div>
 
         <div class="carousel-item">
@@ -76,7 +109,7 @@
         </div>
 
         <div class="carousel-item">
-          <img src="assets/img/carrusel/update/pexels-sora-shimazaki-5673502.jpg" alt="">
+          <img src="assets/img/carrusel/update/pexels-zlatin-georgiev-3778528-9374447.jpg" alt="">
         </div>
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
@@ -91,106 +124,130 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Get Started Section -->
-    <section id="get-started" class="get-started section">
+    <!-- Features Section -->
+    <section id="features" class="features section">
 
       <div class="container">
 
-       
-      </div>
+        <ul class="nav nav-tabs row  g-2 d-flex" data-aos="fade-up" data-aos-delay="100" role="tablist">
 
-    </section><!-- /Get Started Section -->
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true" role="tab">
+              <h4>Especialización</h4>
+            </a>
+          </li><!-- End tab nav item -->
 
-    <!-- Constructions Section -->
-    <section id="constructions" class="constructions section">
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false" tabindex="-1" role="tab">
+              <h4>Servicio personalizado</h4>
+            </a><!-- End tab nav item -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Servicios Ambientales</h2>
-        <p>Encuentramos la solución para vos</p>
-      </div><!-- End Section Title -->
+          </li>
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false" tabindex="-1" role="tab">
+              <h4>Experiencia</h4>
+            </a>
+          </li><!-- End tab nav item -->
 
-      <div class="container">
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" aria-selected="false" tabindex="-1" role="tab">
+              <h4>Pymes y grandes industrias</h4>
+            </a>
+          </li><!-- End tab nav item -->
 
-        <div class="row gy-4">
+        </ul>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/vacuolar-estudio-impacto-ambiental.jpg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Estudios de Impacto Ambiental (EIA)</h4>
-                    <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
-                  </div>
-                </div>
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Vacuolar Ingeniería es una consultora especializada en soluciones ambientales y sostenibles</h3>
+                <p class="fst-italic">
+                  Diseñada para atender las necesidades de pequeñas y medianas empresas (pymes) así como de grandes industrias.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Centrada en la valorización de residuos.</span></li>
+                  
+                  <li><i class="bi bi-check2-all"></i> <span>Gestión de la huella de carbono y la implementación de prácticas sostenibles que no solo cumplen con la normativa vigente, sino que también promueven la responsabilidad social empresarial.
+                  </span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/carrusel/update/wind-power-4380274_1280.jpg" alt="" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Card Item -->
+          </div><!-- End tab content item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/Vacuolar-transporte-peligroso.jpeg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Inscripción como generadores y transporte de Residuos Peligrosos</h4>
-                    <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
-                  </div>
-                </div>
+          <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Entendemos que cada empresa es única y enfrenta desafíos específicos.</h3>
+                <p class="fst-italic">
+                  Ofrecemos un servicio personalizado que incluye la evaluación de factibilidad de proyectos, supervisión ambiental de obras y la elaboración de informes técnicos que garantizan el cumplimiento de los estándares ambientales.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Nos especializamos en la elaboración de estudios de impacto ambiental, asegurando que nuestros clientes cuenten con un análisis exhaustivo de los efectos de sus proyectos en el entorno.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Brindamos acompañamiento en el proceso de transición hacia la carbono neutralidad, ayudando a las empresas a establecer metas claras y alcanzables en la reducción de su huella de carbono.</span></li>
+                   </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/carrusel/update/personalizacion.jpg" alt="" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Card Item -->
+          </div><!-- End tab content item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/constructions-3.jpg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Inspección Ambiental de Obras</h4>
-                    <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
-                  </div>
-                </div>
+          <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+<h3>Proyectos financiados por organismos internacionales, Banco Interamericano de Desarrollo (BID) y la CAF</h3>
+<p class="fst-italic">
+  Nuestra experiencia en la supervisión de proyectos financiados por organismos internacionales, como el Banco Interamericano de Desarrollo (BID) y la CAF, nos permite ofrecer un enfoque riguroso y profesional en la gestión de proyectos ambientales. 
+</p>                
+<ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Realizamos monitoreos ambientales que garantizan el seguimiento continuo de las condiciones del entorno, permitiendo a nuestros clientes tomar decisiones informadas y proactivas en la gestión de sus operaciones.</span></li>
+                   </ul>
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/carrusel/update/descargar.png" alt="" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Card Item -->
+          </div><!-- End tab content item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/vacuolar-planes-gestion-obras.jpeg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Elaboración de Planes de Gestión Ambiental (PMA)</h4>
-                    <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
-                  </div>
-                </div>
+          <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Aliado de Pymes y grandes industrias</h3>
+                <p class="fst-italic">
+                  Con un enfoque en la innovación, la capacitación y la gestión ambiental, estamos comprometidos a ayudar a nuestros clientes a alcanzar sus objetivos de sostenibilidad y a construir un futuro más responsable y consciente. Juntos, podemos transformar los desafíos.
+
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Vacuolar Ingeniería se posiciona como un aliado estratégico para pymes y grandes industrias que buscan integrar la sostenibilidad en su modelo de negocio.</span></li>
+                   </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-4.jpg" alt="" class="img-fluid">
               </div>
             </div>
-          </div><!-- End Card Item -->
+          </div><!-- End tab content item -->
 
         </div>
 
       </div>
 
-    </section><!-- /Constructions Section -->
+    </section><!-- /Features Section -->
+
+
 
     <!-- Services Section -->
     <section id="services" class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Servicios</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Nuestros Servicios</h2>
+        <p>Encontramos la solución para vos</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -199,69 +256,141 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-mountain-city"></i>
-              </div>
-              <h3>Nesciunt Mete</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
+              <h3>Estudios de Impacto Ambiental (EIA)</h3>
+              <p>
+                Evaluamos los efectos potenciales de proyectos en el ambiente y el entorno social, identificando
+                impactos negativos, positivos y proponiendo medidas de mitigación. Este estudio es fundamental para la
+                toma de decisiones informadas y el cumplimiento de normativas ambientales.
+
+              </p> <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
+              <h3>Inscripción como Generadores y Transporte de Residuos Peligrosos</h3>
+              <p>Asistimos a las empresas en el proceso de registro como generadores de residuos peligrosos, asegurando
+                que cumplan con la normativa vigente. También gestionamos la documentación necesaria para el transporte
+                seguro de estos residuos.</p> <a href="#" class="readmore stretched-link">Contactar<i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-compass-drafting"></i>
-              </div>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+
+              <h3>Elaboración de Planes de Gestión Ambiental (PGA)</h3>
+              <p> Diseñamos planes estratégicos que establecen acciones y procedimientos para minimizar el impacto
+                ambiental de las actividades de una organización. Estos planes son esenciales para la sostenibilidad y
+                el cumplimiento normativo.</p>
+              <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Inspección Ambiental de Obras</h3>
+              <p>
+                Realizamos auditorías y supervisiones en proyectos de construcción para garantizar que se cumplan las
+                normativas ambientales. Esto incluye la evaluación de prácticas de gestión de residuos y el control de
+                emisiones.
+              </p> <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Planes de Gestión de Residuos</h3>
+              <p> Desarrollamos estrategias para la correcta gestión de residuos generados por las empresas, promoviendo
+                la reducción, reutilización y reciclaje. Estos planes ayudan a minimizar el impacto ambiental y
+                optimizar recursos.
+              </p>
+              <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Planes de Capacitaciones Ambientales</h3>
+              <p> Ofrecemos programas de formación para el personal de las empresas en temas ambientales, fomentando la
+                conciencia y el cumplimiento
+                de prácticas sostenibles en el lugar de trabajo.</p>
+              <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Planes y Seguimiento de Monitoreos Ambientales</h3>
+              <p>
+                Implementamos programas de monitoreo para evaluar la calidad del aire, agua y suelo, asegurando que las
+                actividades de la empresa no afecten negativamente al entorno. Esto incluye la elaboración de informes
+                periódicos.
+
+              </p> <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Medición de Nivel Freático</h3>
+              <p> Realizamos mediciones del nivel freático para evaluar la disponibilidad de agua subterránea y su
+                calidad. Este servicio es crucial para la gestión de recursos hídricos y la planificación de proyectos.
+              </p>
+              <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Estudios de Suelo: Contaminación y Remediación</h3>
+              <p> Evaluamos la calidad del suelo para identificar contaminantes y proponemos estrategias de remediación.
+                Este servicio es esencial para restaurar áreas afectadas y garantizar la salud ambiental.</p>
+              <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Elaboración de Informes de Seguimiento Ambiental
+              </h3>
+              <p>Generamos informes detallados que documentan el estado ambiental de un proyecto o actividad, incluyendo
+                el cumplimiento de normativas y recomendaciones para mejorar la gestión ambiental.</p> <a href="#"
+                class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Cálculo de la Huella de Carbono</h3>
+              <p>Medimos las emisiones de gases de efecto invernadero generadas por las actividades de una organización,
+                ayudando a establecer metas de reducción y a promover la sostenibilidad.
+              </p> <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Estudios GIS</h3>
+              <p> Utilizamos Sistemas de Información Geográfica (GIS) para analizar datos espaciales relacionados con el
+                medio ambiente, facilitando la toma de decisiones informadas en la planificación y gestión de proyectos.
+              </p> <a href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+
+              <h3>Efluentes: Líquidos y Gaseosos</h3>
+              <p>Evaluamos y gestionamos los efluentes generados por las empresas, tanto líquidos como gaseosos,
+                asegurando que cumplan con las normativas ambientales y minimizando su impacto en el entorno.</p> <a
+                href="#" class="readmore stretched-link">Contactar <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-trowel-bricks"></i>
-              </div>
-              <h3>Asperiores Commodit</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-helmet-safety"></i>
-              </div>
-              <h3>Velit Doloremque</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
 
         </div>
 
@@ -306,7 +435,8 @@
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                    class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -337,7 +467,8 @@
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                    class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -368,7 +499,8 @@
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                    class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -383,9 +515,78 @@
 
   </main>
 
-  <footer id="footer"></footer>
+  <footer class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Vacuolar Ingeniería</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Berazategui</p>
+            <p>Buenos Aires</p>
+            <p class="mt-3"><strong>Teléfono:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#"></a>Contacto</li>
+            <li><a href="#">Política de Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nuestros Servicios</h4>
+          <ul>
+            <li><a href="#">Estudios</a></li>
+            <li><a href="#">Planes</a></li>
+            <li><a href="#">Elaboración de documentación</a></li>
+            <li><a href="#">Inscripciones</a></li>
+            <li><a href="#">Mediciones</a></li>
+          </ul>
+        </div>
+
+       
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Notas de interés</h4>
+          <ul>
+            <li><a href="#">Nota 1</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Otra nota</a></li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Vacuolar</strong> <span>Todos los derechos
+          reservados</span></p>
+      <div class="credits">
+        Desarrollado por <a href="https://gvielza.github.io/portafolio/" target="_blank">Gionnelly Vielza Durán</a>
+      </div>
+    </div>
+
+  </footer>
+
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

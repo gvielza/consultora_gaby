@@ -2837,7 +2837,7 @@ section,
 #header {
   padding: 10px 0;
   transition: all 0.5s;
-  background: white;
+  
 }
 
 #header.header-scrolled {
@@ -2944,3 +2944,56 @@ section,
       display: none;
  }
 }
+
+.service-item {
+  background-color: #fff; /* Color de fondo del item */
+  border: 1px solid #eee; /* Borde suave */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Redondear esquinas */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves */
+  overflow: hidden; /* Asegura que las sombras internas no se salgan */
+  position: relative;
+}
+  
+  .service-item:hover {
+      transform: translateY(-5px); /* Levanta un poco el item */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+      
+  }
+  
+  .service-item:hover::before {
+      transform: scale(1.2); /* Agranda un poco la linea */
+      opacity: 1;
+  }
+  
+  /* Sombra interna y esquinas */
+  .service-item::before {
+      content: ''; /* Contenido vacio */
+      position: absolute; /* Posicionamiento absoluto */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px; /* Radio de borde igual al del item */
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.05); /* Sombra interna */
+      z-index: -1; /* Poner detras del contenido */
+      transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
+      opacity: 0; /* Ocultar al inicio */
+      transform: scale(1);
+      border: 1px solid #00c2ff; /* Color de la linea */
+  }
+  
+  .icon-container {
+      font-size: 3rem; /* Tamaño del icono */
+      margin-bottom: 15px;
+      color: #00c2ff; /* Color del icono */
+  }
+  
+  .service-item h3 {
+      margin-bottom: 10px;
+      color: #333;
+  }
+  
+  .service-item p {
+      color: #555;
+  }
