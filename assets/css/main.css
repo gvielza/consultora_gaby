@@ -133,6 +133,8 @@ h6 {
   --heading-color: #3c3c3c;
   --nav-color: #3c3c3c;
   --nav-hover-color: #3c3c3c;
+  
+  
 }
 
 /*--------------------------------------------------------------
@@ -2997,3 +2999,22 @@ section,
   .service-item p {
       color: #555;
   }
+/* Aseguramos que el color del menu sea blanco por defecto */
+.navmenu a,
+.navmenu a:focus {
+    color: rgba(255, 255, 255, 0.55) !important; /* Blanco con opacidad, y con !important */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+
+/* Estilo del menú cuando el header tiene la clase 'scrolled' (letra negra) */
+#header.scrolled .navmenu a,
+#header.scrolled .navmenu a:focus {
+    color: #3c3c3c !important; /* Color negro/gris oscuro al hacer scroll, y con !important*/
+}
+
+/*Estilo del menu en el estado scrolled*/
+.scrolled .navmenu a,
+.scrolled .navmenu a:focus {
+    color: #3c3c3c !important; /* Color negro/gris oscuro al hacer scroll, y con !important */
+}
