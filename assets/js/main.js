@@ -26,13 +26,24 @@
    * Mobile nav toggle
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+const mobileNav = document.querySelector('#mobile-nav');
+const body = document.querySelector('body');
 
-  function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
+function mobileNavToogle() {
+    body.classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
-  }
-  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+
+    if (body.classList.contains('mobile-nav-active')) {
+        // Si la clase está activa, muestra el menú
+        mobileNav.style.display = 'block';
+    } else {
+        // Si la clase no está activa, oculta el menú
+        mobileNav.style.display = 'none';
+    }
+}
+
+mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
   /**
    * Hide mobile nav on same-page/hash links
@@ -167,3 +178,4 @@
   new PureCounter();
 
 })();
+

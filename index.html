@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Vacuolar Ingenieria</title>
+  <title>Vacuolar Ingenieria </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,36 +36,58 @@
   <div>
     <header id="header" class="header d-flex align-items-center fixed-top">
       <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-        <a href="index.html" class="logo d-flex align-items-center" id="logo-img">
-          <img src="assets/img/Logo-removebg.png" alt="Logo Vacuolar">
-        </a>
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="dropdown"><a href="services.html"><span>Servicios Ambientales</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <a href="index.html" class="logo d-flex align-items-center" id="logo-img">
+              <img src="assets/img/Logo-removebg.png" alt="Logo Vacuolar" id="logo">
+          </a>
+          <nav id="navmenu" class="navmenu"> <!-- Menú de escritorio -->
               <ul>
-                <li><a href="#">Estudios de Impacto Ambiental (EIA)</a></li>
-                <li><a href="#">Planes de Gestión Ambiental (PMA)</a></li>
-                <li><a href="#">Monitoreos Ambientales</a></li>
-                <li><a href="#">Inspección Ambiental de Obras</a></li>
-                <li><a href="#">Estudios de Suelo: contaminación y remediación</a></li>
-                <li><a href="#">Cálculo de la Huella de Carbono</a></li>
-                <li><a href="#">Estudios GIS</a></li>
-                <li><a href="#">Otros</a></li>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li class="dropdown"><a href="services.html"><span>Servicios Ambientales</span> <i
+                              class="bi bi-chevron-down toggle-dropdown"></i></a>
+                      <ul>
+                          <li><a href="#">Estudios de Impacto Ambiental (EIA)</a></li>
+                          <li><a href="#">Planes de Gestión Ambiental (PMA)</a></li>
+                          <li><a href="#">Monitoreos Ambientales</a></li>
+                          <li><a href="#">Inspección Ambiental de Obras</a></li>
+                          <li><a href="#">Estudios de Suelo: contaminación y remediación</a></li>
+                          <li><a href="#">Cálculo de la Huella de Carbono</a></li>
+                          <li><a href="#">Estudios GIS</a></li>
+                          <li><a href="#">Otros</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">Acerca de</a></li>
+                  <li><a href="contact.html">Contacto</a></li>
               </ul>
-            </li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">Acerca de</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="mobile-nav-toggle">
-          <i class="bi bi-list"></i>
-        </div>
+          </nav>
+          <div class="mobile-nav-toggle">
+              <i class="bi bi-list"></i>
+          </div>
+  
+          <!-- Menú para mobile (inicialmente oculto) -->
+          <nav id="mobile-nav" class="mobile-nav-list">
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li class="dropdown"><a href="services.html"><span>Servicios Ambientales</span> <i
+                              class="bi bi-chevron-down toggle-dropdown"></i></a>
+                      <ul>
+                          <li><a href="#">Estudios de Impacto Ambiental (EIA)</a></li>
+                          <li><a href="#">Planes de Gestión Ambiental (PMA)</a></li>
+                          <li><a href="#">Monitoreos Ambientales</a></li>
+                          <li><a href="#">Inspección Ambiental de Obras</a></li>
+                          <li><a href="#">Estudios de Suelo: contaminación y remediación</a></li>
+                          <li><a href="#">Cálculo de la Huella de Carbono</a></li>
+                          <li><a href="#">Estudios GIS</a></li>
+                          <li><a href="#">Otros</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">Acerca de</a></li>
+                  <li><a href="contact.html">Contacto</a></li>
+              </ul>
+          </nav>
       </div>
-    </header>
+  </header>
   </div>
 
 
@@ -80,7 +102,8 @@
         <div class="container">
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-6 text-center">
-              <h2>Bienvenidos a Vacuolar Ingeniería</h2>
+              <h2>Vacuolar Ingeniería</h2>
+              <img src="assets/img/Logo-removebg.png" alt="Logo Vacuolar Ingeniería" width="50%">
               <p>Somos un estudio profesional especializado en brindar soluciones ambientales a pymes y empresas de
                 todas las escalas. Nos enfocamos en generar resultados que aporten valor agregado, convirtiendo los
                 desafíos ambientales en oportunidades de crecimiento y mejora continua.</p>
@@ -162,15 +185,17 @@
           <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Vacuolar Ingeniería es una consultora especializada en soluciones ambientales y sostenibles</h3>
+                <h3>Vacuolar Ingeniería es un estudio especializado en brindar soluciones ambientales</h3>
                 <p class="fst-italic">
-                  Diseñada para atender las necesidades de pequeñas y medianas empresas (pymes) así como de grandes industrias.
-                </p>
+                  Enfocada en atender las necesidades de pequeñas, medianas y grandes en materia de:                </p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Centrada en la valorización de residuos.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Planes de sostenibilidad</span></li>
                   
-                  <li><i class="bi bi-check2-all"></i> <span>Gestión de la huella de carbono y la implementación de prácticas sostenibles que no solo cumplen con la normativa vigente, sino que también promueven la responsabilidad social empresarial.
-                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Estudios de Impacto Ambiental</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Inspecciones </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Planes de Gestión de Integral de Residuos Sólidos Urbanos (GIRSU) </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Medición de huellas ambientales; ecológica, hídrica y de carbono </span></li>
+                  
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -182,9 +207,9 @@
           <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Entendemos que cada empresa es única y enfrenta desafíos específicos.</h3>
+                <h3>Entendemos que cada empresa es única y enfrenta desafíos específicos</h3>
                 <p class="fst-italic">
-                  Ofrecemos un servicio personalizado que incluye la evaluación de factibilidad de proyectos, supervisión ambiental de obras y la elaboración de informes técnicos que garantizan el cumplimiento de los estándares ambientales.
+                  Ofrecemos servicio personalizado que incluye la evaluación de factibilidad de proyectos, supervisión ambiental de obras y la elaboración de informes técnicos que garantizan el cumplimiento de los estándares ambientales.
                 </p>
                 <ul>
                   <li><i class="bi bi-check2-all"></i> <span>Nos especializamos en la elaboración de estudios de impacto ambiental, asegurando que nuestros clientes cuenten con un análisis exhaustivo de los efectos de sus proyectos en el entorno.</span></li>
@@ -205,7 +230,8 @@
   Nuestra experiencia en la supervisión de proyectos financiados por organismos internacionales, como el Banco Interamericano de Desarrollo (BID) y la CAF, nos permite ofrecer un enfoque riguroso y profesional en la gestión de proyectos ambientales. 
 </p>                
 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Realizamos monitoreos ambientales que garantizan el seguimiento continuo de las condiciones del entorno, permitiendo a nuestros clientes tomar decisiones informadas y proactivas en la gestión de sus operaciones.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Diseñamos y/o acompañamos en el diseño de proyectos que aspiren a la financiación de organismos multilaterales.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Llevamos la supervisión e inspección de los requerimientos y salvaguardas ambientales y sociales que establecen la normativa o los estándares de cada organismo.</span></li>
                    </ul>
                 
               </div>
@@ -404,7 +430,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Notas recientes</h2>
-        <p>Encuentra notas, normativas, información y más en nuestro <a href="blog.html" target="_blank">Blog</a></p>
+        <p>Encuentra notas, normativas, información y más en nuestro <a href="/blog.html" target="_blank">Blog</a></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -435,7 +461,7 @@
 
                 <hr>
 
-                <a href="blog/camino-hacia-la-carbono-neutralidad.html" class="readmore stretched-link"><span>Leer más</span><i
+                <a href="/blog/camino-hacia-la-carbono-neutralidad.html" class="readmore stretched-link"><span>Leer más</span><i
                     class="bi bi-arrow-right"></i></a>
 
               </div>
@@ -467,7 +493,7 @@
 
                 <hr>
 
-                <a href="blog/Importancia-de-los-Planes-de-Monitoreo-y-Mediciones-Ambientales.html" class="readmore stretched-link"><span>Leer más</span><i
+                <a href="/blog/Importancia-de-los-Planes-de-Monitoreo-y-Mediciones-Ambientales.html" class="readmore stretched-link"><span>Leer más</span><i
                     class="bi bi-arrow-right"></i></a>
 
               </div>
@@ -499,7 +525,7 @@
 
                 <hr>
 
-                <a href="blog/Programas-Ambientales-en-las-PyMEs.html" class="readmore stretched-link"><span>Leer más</span><i
+                <a href="/blog/Programas-Ambientales-en-las-PyMEs.html" class="readmore stretched-link"><span>Leer más</span><i
                     class="bi bi-arrow-right"></i></a>
 
               </div>
@@ -526,14 +552,14 @@
           <div class="footer-contact pt-3">
             <p>Berazategui</p>
             <p>Buenos Aires</p>
-            <p class="mt-3"><strong>Teléfono:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p class="mt-3"><strong>Teléfono:</strong> <span>+54 911 5095 6040</span></p>
+            <p><strong>Email:</strong> <span>gabriela.y.iglesias@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            
+            <a href="https://www.linkedin.com/in/gabriela-iglesias-2483341a1/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          
+            <a href="https://wa.me/+5491150956040" target="_blank"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
 
@@ -541,9 +567,9 @@
           <h4>Páginas</h4>
           <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
             <li><a href="#">Servicios</a></li>
-            <li><a href="#"></a>Contacto</li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="#">Política de Privacidad</a></li>
           </ul>
         </div>
@@ -551,8 +577,8 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Nuestros Servicios</h4>
           <ul>
-            <li><a href="#">Estudios</a></li>
-            <li><a href="#">Planes</a></li>
+            <li><a href="#services">Estudios</a></li>
+            <li><a href="#features">Planes</a></li>
             <li><a href="#">Elaboración de documentación</a></li>
             <li><a href="#">Inscripciones</a></li>
             <li><a href="#">Mediciones</a></li>
@@ -564,9 +590,11 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Notas de interés</h4>
           <ul>
-            <li><a href="#">Nota 1</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Otra nota</a></li>
+            <li><a href="/blog/Programas-Ambientales-en-las-PyMEs.html">Programas Ambientales en las PyMEs
+            </a></li>
+            <li><a href="/blog/camino-hacia-la-carbono-neutralidad.html">Camino hacia la Carbono Neutralidad
+            </a></li>
+            <li><a href="/blog/Importancia-de-los-Planes-de-Monitoreo-y-Mediciones-Ambientales.html">Importancia de los Planes de Monitoreo y Mediciones Ambientales</a></li>
             
           </ul>
         </div>
