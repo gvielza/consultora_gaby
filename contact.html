@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact - UpConstruction Bootstrap Template</title>
+  <title>Contacto - Vacuolar Ingeniería</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/Logo-removebg.png" rel="icon">
+  <link href="assets/img/Logo-removebg.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -28,55 +28,60 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: UpConstruction
-  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="contact-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">UpConstruction</h1> <span>.</span>
+      <a href="index.html" class="logo d-flex align-items-center" id="logo-img">
+        <img src="assets/img/Logo-removebg.png" alt="Logo Vacuolar" id="logo">
       </a>
-
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu"> <!-- Menú de escritorio -->
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="dropdown"><a href="index.html#services"><span>Servicios Ambientales</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="index.html#services">Estudios de Impacto Ambiental (EsIA)</a></li>
+              <li><a href="index.html#services">Planes de Gestión Ambiental (PGA)</a></li>
+              <li><a href="index.html#services">Monitoreos Ambientales</a></li>
+              <li><a href="index.html#services">Inspección Ambiental de Obras</a></li>
+              <li><a href="index.html#services">Estudios de Suelo: contaminación y remediación</a></li>
+              <li><a href="index.html#services">Cálculo de la Huella de Carbono</a></li>
+              <li><a href="index.html#services">Estudios GIS</a></li>
+              <li><a href="index.html#services">Otros</a></li>
             </ul>
           </li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contacto</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      <div class="mobile-nav-toggle">
+        <i class="bi bi-list"></i>
+      </div>
 
+      <!-- Menú para mobile (inicialmente oculto) -->
+      <nav id="mobile-nav" class="mobile-nav-list">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="dropdown"><a href="#services"><span>Servicios Ambientales</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#services">Estudios de Impacto Ambiental (EsIA)</a></li>
+              <li><a href="#services">Planes de Gestión Ambiental (PGA)</a></li>
+              <li><a href="#services">Monitoreos Ambientales</a></li>
+              <li><a href="#services">Inspección Ambiental de Obras</a></li>
+              <li><a href="#services">Estudios de Suelo: contaminación y remediación</a></li>
+              <li><a href="#services">Cálculo de la Huella de Carbono</a></li>
+              <li><a href="#services">Estudios GIS</a></li>
+              <li><a href="#services">Otros</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -85,11 +90,11 @@
     <!-- Page Title -->
     <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
       <div class="container position-relative">
-        <h1>Contact</h1>
+        <h1>Contacto</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="current">Contacto</li>
           </ol>
         </nav>
       </div>
@@ -97,6 +102,11 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
+      
+      <div class="container position-relative">
+        <img class="position-relative top-50 start-50 centered-image" src="assets/img/Logo-removebg.png" alt="Logo" width="300px">
+      </div>
+      
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -105,24 +115,24 @@
           <div class="col-lg-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <h3>Dirección</h3>
+              <p>CABA / Provincia Buenos Aires</p>
             </div>
           </div><!-- End Info Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <h3>Teléfono / Whatsapp</h3>
+              <p>+54 911 5095 6040</p>
             </div>
           </div><!-- End Info Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <p>info@example.com</p>
+              <h3>Email</h3>
+              <p>gabriela.y.iglesias@gmail.com</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -135,7 +145,78 @@
 
   </main>
 
-  <footer id="footer"></footer>
+  <footer class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Vacuolar Ingeniería</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Berazategui</p>
+            <p>Buenos Aires</p>
+            <p class="mt-3"><strong>Teléfono:</strong> <span>+54 911 5095 6040</span></p>
+            <p><strong>Email:</strong> <span>gabriela.y.iglesias@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+
+            <a href="https://www.linkedin.com/in/gabriela-iglesias-2483341a1/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+
+            <a href="https://wa.me/+5491150956040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#services">Servicios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="privacidad.html">Política de Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nuestros Servicios</h4>
+          <ul>
+            <li><a href="index.html#services">Estudios</a></li>
+            <li><a href="index.html#features">Planes</a></li>
+            <li><a href="index.html#services">Elaboración de documentación</a></li>
+            <li><a href="index.html#services">Inscripciones</a></li>
+            <li><a href="index.html#services">Mediciones</a></li>
+          </ul>
+        </div>
+
+
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Notas de interés</h4>
+          <ul>
+            <li><a href="/blog/Programas-Ambientales-en-las-PyMEs.html">Programas Ambientales en las PyMEs
+              </a></li>
+            <li><a href="/blog/camino-hacia-la-carbono-neutralidad.html">Camino hacia la Carbono Neutralidad
+              </a></li>
+            <li><a href="/blog/Importancia-de-los-Planes-de-Monitoreo-y-Mediciones-Ambientales.html">Importancia de los
+                Planes de Monitoreo y Mediciones Ambientales</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Vacuolar</strong> <span>Todos los derechos
+          reservados</span></p>
+      <div class="credits">
+        Desarrollado por <a href="https://gvielza.github.io/portafolio/" target="_blank">Gionnelly Vielza Durán</a>
+      </div>
+    </div>
+
+  </footer>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

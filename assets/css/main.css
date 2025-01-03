@@ -1787,7 +1787,9 @@ section,
 #blog-pagination{
   visibility: hidden;
 }
-
+.centered-image {
+  transform: translate(-50%, -25%);
+}
 
 
 
