@@ -1769,7 +1769,7 @@ section,
 }
 
 .navmenu a {
-  color: #6c757d; /* Color normal */
+  /* color: #6c757d; Color normal */
   text-decoration: none;
   transition: color 0.3s ease;
 }
